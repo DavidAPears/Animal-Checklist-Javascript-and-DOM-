@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Animal Checklist</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js">
+    </script>
+  </head>
+  <body>
+
+
+
+
+
+    <form id="new-item-form">
+      <div id="form-wrapper" class="flex-grid" >
+        <br>
+        <div class="form-item" class="col">
+          <label for="animal" class="primary">Animal</label>
+          <input type="text" id="animal" required/>
+        </div>
+        <br>
+        <div class="form-item" class="col">
+          <label for="country" class="primary">Country</label>
+          <input type="text" id="country" required/>
+        </div>
+        <br>
+        <div class="form-item" class="col">
+          <label for="category" class="primary">Category</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Common">Common</option>
+            <option value="Hard-To-Find">Hard To Find</option>
+            <option value="Rare">Rare</option>
+          </select>
+        </div>
+        <br>
+        <br>
+      </div>
+      <div class="flex-grid">
+      <input type="submit" value="save"/>
+      </div>
+    </form>
+
+
+
+<div class="flex-grid">
+    <h1>Animal Tick List</h1>
+    <div id="animal-list">
+    </div>
+
+    <div class="flex-grid">
+    <button id="button" type="button">Clear Animal List</button>
+    </div>
+
+  </body>
+</html>
